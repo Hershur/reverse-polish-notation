@@ -18,7 +18,7 @@ RPN is basically a type of notation where operators ('-', '+', '*') come before 
 `5 3 2 + * √` equivalent to `√(5 * (3 + 2))` returns `5`.
 
 NB: 
-For Mac -- press `option + v` to get the `√` symbol
-For Windows -- Turn on Num lock on your keyboard
+- For Mac -- press `option + v` to get the `√` symbol
+- For Windows -- Turn on Num lock on your keyboard
 Check if you have a soft numeric keypad on your keyboard (tiny numbers written under letters U,I,O)
 Then hit simultaneously `Alt + 2 + 5 + 1 ` ====> `Alt + K + I + J`
