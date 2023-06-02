@@ -17,12 +17,10 @@ export default function RPNBox() {
                 onChange={(e) => setRPNInput(e.currentTarget.value)}
             />
 
-            {
-                rpnInput &&
-                <div className="result-box">
-                    {result}
-                </div>
-            }
+
+            <div className="result-box">
+                {result}
+            </div>
         </>
     )
 }
