@@ -8,7 +8,7 @@ export default function RPNBox() {
 
     return (
         <>
-            <h1>Reverse Polish Notation</h1>
+            <h1>Reverse Polish Notation Calculator</h1>
 
             <TextInput 
                 value={rpnInput}
