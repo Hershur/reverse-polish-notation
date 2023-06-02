@@ -47,14 +47,13 @@ describe('Test for utils functions', () => {
         });
 
         test('should through error for invalid expression', () => {
-            try {
-                calculateRPN('7 6 * +');
-            } catch (error) {
-                expect(error).toBeInstanceOf(Error);
-                if(error instanceof Error) {
-                    expect(error.message).toBe('Invalid expression');
-                }
-            }
+            expect(() => {
+                calculateRPN('7 6 * +')
+            }).toThrow(Error('Invalid expression'));
+
+            expect(() => {
+                calculateRPN('45 /');
+              }).toThrowError('Invalid expression');
         });
     });
 }); 
