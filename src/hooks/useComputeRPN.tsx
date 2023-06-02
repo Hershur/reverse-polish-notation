@@ -7,8 +7,7 @@ export default function useComputeRPN(expression: string) {
 
     useEffect(() => {
         try {
-            const rpnExpression = expression.trim().split(' ');
-            const result = calculateRPN(rpnExpression as unknown as string);
+            const result = calculateRPN(expression);
             setResult(result);
         } catch (error) {
             if (error instanceof Error) {

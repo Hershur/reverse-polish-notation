@@ -7,6 +7,7 @@ RPN is basically a type of notation where operators ('-', '+', '*') come before 
 ```bash
  RUN npm install -- to install dependencies
  RUN npm run dev -- to start app locally
+ RUN npm run test -- to run test cases
 ```
 
 ### Examples
@@ -17,8 +18,8 @@ RPN is basically a type of notation where operators ('-', '+', '*') come before 
 -- Single arguments functions like square roots is also possible e.g `16 √` equals `4`. 
 `5 3 2 + * √` equivalent to `√(5 * (3 + 2))` returns `5`.
 
-NB: 
-- For Mac -- press `option + v` to get the `√` symbol
+NB: To get the `√` symbol
+- For Mac -- press `option + v` 
 - For Windows -- Turn on Num lock on your keyboard
 Check if you have a soft numeric keypad on your keyboard (tiny numbers written under letters U,I,O)
 Then hit simultaneously `Alt + 2 + 5 + 1 ` ====> `Alt + K + I + J`

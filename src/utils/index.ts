@@ -1,8 +1,8 @@
-function isOperator(token: string) {
+export function isOperator(token: string) {
     return ['+', '-', '*', '/', '√'].includes(token);
 }
   
-function evaluateOperand(operand: number) {
+export function evaluateOperand(operand: number) {
     //check fraction
     const [numerator, denominator] = operand.toString().split('/');
   
@@ -14,7 +14,8 @@ function evaluateOperand(operand: number) {
     return parseInt(numerator, 10) / parseInt(denominator, 10);
 }
   
-export function calculateRPN(expression: string | number[]) {
+export function calculateRPN(expressionString: string) {
+    const expression = expressionString.trim().split(' ')
     const stack: number[] = [];
 
     for (const token of expression) {
@@ -44,7 +45,7 @@ export function calculateRPN(expression: string | number[]) {
 
         stack.push(result as number);
       } else {
-        stack.push(evaluateOperand(token as number));
+        stack.push(evaluateOperand(token as unknown as number));
       }
     }
   
