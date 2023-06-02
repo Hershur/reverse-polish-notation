@@ -50,10 +50,10 @@ describe('Test for utils functions', () => {
             try {
                 calculateRPN('7 6 * +');
             } catch (error) {
+                expect(error).toBeInstanceOf(Error);
                 if(error instanceof Error) {
                     expect(error.message).toBe('Invalid expression');
                 }
-
             }
         });
     });
