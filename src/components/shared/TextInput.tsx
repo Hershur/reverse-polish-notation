@@ -16,7 +16,8 @@ export default function TextInput({
         <div>
             <input 
                 type="text"
-                name={name} 
+                name={name}
+                data-testid="rpnInput" 
                 className="rpn-input" 
                 id={name} 
                 autoComplete="off" 

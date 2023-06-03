@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot testing suite for whole App Matches DOM Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="rpnBox"
+  >
+    <h1
+      data-testid="heading"
+    >
+      Reverse Polish Notation Calculator
+    </h1>
+    <div>
+      <input
+        autocomplete="off"
+        class="rpn-input"
+        data-testid="rpnInput"
+        id="rpn"
+        name="rpn"
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        for="rpn"
+      >
+        <span>
+          Enter reverse polish notation
+        </span>
+      </label>
+    </div>
+    <div
+      class="result-box"
+      data-testid="resultBox"
+    />
+  </div>
+</DocumentFragment>
+`;

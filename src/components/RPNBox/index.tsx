@@ -7,8 +7,8 @@ export default function RPNBox() {
     const { result } = useComputeRPN(rpnInput);
 
     return (
-        <>
-            <h1>Reverse Polish Notation Calculator</h1>
+        <div data-testid="rpnBox">
+            <h1 data-testid="heading">Reverse Polish Notation Calculator</h1>
 
             <TextInput 
                 value={rpnInput}
@@ -17,10 +17,9 @@ export default function RPNBox() {
                 onChange={(e) => setRPNInput(e.currentTarget.value)}
             />
 
-
-            <div className="result-box">
+            <div data-testid="resultBox" className="result-box">
                 {result}
             </div>
-        </>
+        </div>
     )
 }
